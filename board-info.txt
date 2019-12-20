@@ -1,0 +1,2 @@
+require version-vendor=1562172420|1564145310|1564146094|1564392158,28
+require version-miui=V10.3.4.0.PFBEUXM
