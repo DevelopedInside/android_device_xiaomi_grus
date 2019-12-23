@@ -1,3 +1,2 @@
 add_lunch_combo lineage_grus-userdebug
-add_lunch_combo lineage_grus-eng
-add_lunch_combo lineage_grus-user
+
