@@ -1,6 +1,11 @@
 [
   {
-    "repository": "android_packages_resources_devicesettings",
-    "target_path": "packages/resources/devicesettings"
+    "repository": "DevelopedInside/device_xiaomi_sdm710-common",
+    "target_path": "device/xiaomi/sdm710-common"
+  },
+   {
+    "repository"  : "okitavera/msm-4.9-grus-okita",
+    "target_path" : "kernel/xiaomi/sdm710",
+    "revision"    : "pie"
   }
 ]

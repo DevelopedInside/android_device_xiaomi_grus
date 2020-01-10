@@ -20,16 +20,6 @@
         <fqname>@4.0::IEffectsFactory/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.bluetooth.a2dp</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IBluetoothAudioOffload</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IBluetoothAudioOffload/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.biometrics.fingerprint</name>
         <transport>hwbinder</transport>
         <version>2.1</version>
@@ -200,6 +190,16 @@
         <fqname>@4.0::IKeymasterDevice/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>android.hardware.light</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>ILight</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@2.0::ILight/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>android.hardware.media.omx</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -237,12 +237,12 @@
     <hal format="hidl">
         <name>android.hardware.nfc</name>
         <transport>hwbinder</transport>
-        <version>1.1</version>
+        <version>1.0</version>
         <interface>
             <name>INfc</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.1::INfc/default</fqname>
+        <fqname>@1.0::INfc/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.power</name>
@@ -473,12 +473,12 @@
     <hal format="hidl">
         <name>vendor.display.config</name>
         <transport>hwbinder</transport>
-        <version>1.7</version>
+        <version>1.6</version>
         <interface>
             <name>IDisplayConfig</name>
             <instance>default</instance>
         </interface>
-        <fqname>@1.7::IDisplayConfig/default</fqname>
+        <fqname>@1.6::IDisplayConfig/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.display.postproc</name>
@@ -491,26 +491,6 @@
         <fqname>@1.0::IDisplayPostproc/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>vendor.lineage.livedisplay</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>IColorEnhancement</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>IDisplayModes</name>
-            <instance>default</instance>
-        </interface>
-        <interface>
-            <name>IPictureAdjustment</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.0::IColorEnhancement/default</fqname>
-        <fqname>@2.0::IDisplayModes/default</fqname>
-        <fqname>@2.0::IPictureAdjustment/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>vendor.goodix.hardware.biometrics.fingerprint</name>
         <transport>hwbinder</transport>
         <version>2.1</version>
@@ -519,6 +499,32 @@
             <instance>default</instance>
         </interface>
         <fqname>@2.1::IGoodixFingerprintDaemon/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.lineage.biometrics.fingerprint.inscreen</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IFingerprintInscreen</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.lineage.livedisplay</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IDisplayModes</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>IPictureAdjustment</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>ISunlightEnhancement</name>
+            <instance>default</instance>
+        </interface>
     </hal>
     <hal format="hidl">
         <name>vendor.nxp.hardware.nfc</name>
@@ -856,6 +862,16 @@
         <fqname>@1.1::ICitSensorService/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.xiaomi.hardware.displayfeature</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IDisplayFeature</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IDisplayFeature/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.xiaomi.hardware.fingerprintextension</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -944,35 +960,6 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.0::IVSIMService/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>android.hardware.light</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>ILight</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@2.0::ILight/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lineage.biometrics.fingerprint.inscreen</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IFingerprintInscreen</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IFingerprintInscreen/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.lineage.trust</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IUsbRestrict</name>
-            <instance>default</instance>
-        </interface>
     </hal>
     <sepolicy>
         <version>28.0</version>
